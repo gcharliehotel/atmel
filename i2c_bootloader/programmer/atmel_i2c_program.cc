@@ -120,8 +120,8 @@ void ProgramAtmel(int fd, const std::vector<std::uint8_t> &bytes) {
 
     // It would be better to retry the following read on errno==EIO
     // (slave is busy) instead of just having an arbitrary delay.
-    // However, on the rPi, retrying the read leaves something leaves
-    // something in an unrecoverable bad state.
+    // However, on the rPi, retrying the read leaves something in an
+    // unrecoverable bad state.
     //
     // TODO(charliehotel): investigate further; try on another
     // platform.
